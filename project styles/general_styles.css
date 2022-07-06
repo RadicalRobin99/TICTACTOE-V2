@@ -1,0 +1,51 @@
+body {
+  margin: auto;
+  position: relative;
+  max-height: max-content;
+  overflow: hidden;
+}
+
+/* function check_tie() {
+  let grid_values = [];
+  
+  for(i = 0; i < 3; i++) {
+    for(j = 0; j < 3; j++) {
+      if (game_fields[i][j].style.cursor == "not-allowed") {
+        is_square_filled = 1;
+        grid_values.push(is_square_filled)
+      }
+      else {
+        is_square_filled = 0;
+        grid_values.push(is_square_filled)
+      } 
+      console.log(grid_values);
+    }
+  }
+
+  let sum = 0;
+  for (let i = 0; i < grid_values.length; i++) {
+    sum += grid_values[i];
+  }
+  
+  if (sum >= 9){
+    return true
+  }
+  else {
+    return false
+  }
+}
+   */
+
+   /* // if (check_tie()) {
+    //   let player_turn = document.getElementById("player_number_turn");
+    //   player_turn.innerText = "TIE, NO ONE WON!";
+  
+    //   let ties_score = document.getElementById("number_of_ties");
+    //   let current_score = ties_score.innerHTML;
+    //   current_score = current_score.replace(/(\r\n|\n|\r|\t)/gm, "");
+    //   let current_score_num = Number(current_score);
+    //   let new_score =  current_score_num + 1;
+  
+    //   ties_score.innerHTML = String(new_score);
+    // } 
+   */

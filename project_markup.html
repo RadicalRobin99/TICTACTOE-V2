@@ -1,0 +1,189 @@
+<!--
+In this project I am going to create a web version of the popular game: tic tac toe (noughts and crosses)
+
+I will carry out the project in the following order:
+HTML -> JS -> CSS
+
+project plan:
+1) create the game grid
+
+-->
+
+<!-- ------------------------------------------------------------------------------------------- -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- ------------------------------------------------------------------------------------------- -->
+
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Noughts & Crosses Web-Game</title>
+  
+		<!-- Font Family links-->
+    <link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Dekko' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Antic' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Raleway:400' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Red Rose' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Sarabun' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Thasadith' rel='stylesheet'>
+		
+ 
+		<!-- Project CSS file link-->
+    <link rel="stylesheet" href="project styles\general_styles.css">
+		<link rel="stylesheet" href="project styles\header_styles.css">
+		<link rel="stylesheet" href="project styles\game_styles.css">
+
+  </head>
+  
+<!-- ------------------------------------------------------------------------------------------- -->
+
+	<!-- when someone wins and gets 3 in a row we will highlight all win squares green -->
+
+  <body id="grad1">
+		<div class="header">
+			TIC - TAC - TOE
+		</div>
+
+		<div class="grid_canvas_container">
+			<canvas id="drawing_canvas" class="drawing_canvas" height="500" width="500"></canvas>
+			<div class="game_grid">
+				
+				<!-- dont html them as buttons but rather inputs of type button-->
+				<input type="button" value="" id="top_left_field" disabled="true"
+				class="top_left_field" onclick="update_game(game_fields[0][0])">
+
+				<input type="button" value="" id="top_middle_field" disabled="true"
+				class="top_middle_field" onclick="update_game(game_fields[0][1])">
+
+				<input type="button" value="" id="top_right_field" disabled="true"
+				class="top_right_field" onclick="update_game(game_fields[0][2])">
+
+				<input type="button" value="" id="middle_left_field" disabled="true"
+				class="middle_left_field" onclick="update_game(game_fields[1][0])">
+
+				<input type="button" value="" id="center_field" disabled="true"
+				class="center_field" onclick="update_game(game_fields[1][1])">
+
+				<input type="button" value="" id="middle_right_field" disabled="true"
+				class="middle_right_field" onclick="update_game(game_fields[1][2])">
+
+				<input type="button" value="" id="bottom_left_field" disabled="true"
+				class="bottom_left_field" onclick="update_game(game_fields[2][0])">
+
+				<input type="button" value="" id="bottom_middle_field" disabled="true"
+				class="bottom_middle_field" onclick="update_game(game_fields[2][1])">
+
+				<input type="button" value="" id="bottom_right_field" disabled="true"
+				class="bottom_right_field" onclick="update_game(game_fields[2][2])">
+		
+			</div>
+		</div>
+
+		<div class="info_section" id="player_number_turn">
+			WELCOME, PLEASE STATE YOUR NAMES
+		</div>
+
+		<div class="scoreboard">
+			<div class="name_container">
+				<input type="text" id="p1_name_input" class="name_input" placeholder="PLAYER-1 NAME: "/>
+				<input type="button" value="SUBMIT" id="p1_name_submission" class="name_submission" 
+				placeholder="Player1 Name:" onclick="update_player_name(1)"/>
+			</div>
+
+			<div class="name_container">
+				<input type="text" id="p2_name_input" class="name_input" placeholder="PLAYER-2 NAME: "/>
+				<input type="button" value="SUMBIT" id="p2_name_submission" class="name_submission" 
+				placeholder="Player2 Name:" onclick="update_player_name(2)"/>
+			</div>
+
+			<div id="player_1_wins">
+				PLAYER 1 WINS (X)
+			</div>
+
+			<div id="player_2_wins">
+				PLAYER 2 WINS (O)
+			</div>
+
+			<div id="number_of_p1_wins">
+				0
+			</div>
+
+			<div id="number_of_p2_wins">
+				0
+			</div>
+
+		</div>
+
+		<input type="button" id="restart_button" value="PLAY AGAIN"
+		class="restart_button" onclick="restart_game()">
+
+
+	<!-- SOLVED IT, GOTTA PUT MY SCRIPT RIGHT AT THE END OF MY HTML-->
+
+	<script src="project_scripts.js"></script>
+
+  </body>
+
+<!-- ------------------------------------------------------------------------------------------- -->
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="website_header">
+			
+			<div class="left_header_section">
+				
+				<div class="google_logo_container">
+					<img class="google_logo" src="Images\google tasks logo.png">
+				</div>
+				
+				<div class="logo_">
+					
+					<div class="logo_text_1">
+						Google
+					</div>
+					
+					<div class="logo_text_2"</div>
+						Tasks
+					</div>
+				
+				</div>
+			
+			</div>
+
+			<div class="middle_header_section">
+				rgeg
+			</div>
+
+			<div class="right_header_section">
+				egeg
+			</div>
+
+		</div>
+
+		<div class="tasks"></div> -->

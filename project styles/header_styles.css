@@ -1,0 +1,28 @@
+.header {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Thasadith';font-size: 75px;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
+/* gameover true/false
+clear board and values button
+put win line animation */
+
+/* check for column 3 crossed / row 3 crossed / diagonal 3 crossed for ors, if any true game over is true
+game playes while game over is false, restart makes game over false again and clears the board *.
+
+/* make a nice design, include player 1 crosses player 2 noughts and respective number of wins + ties, also state
+whos turn it is to move each time */
+
+/* put an input box with sumbit button for player names */
+
+/* gotta sort my logic and organisation, also not going to have a ties score column, just state draw instead
+in game info section */
+
+/* when come back have the input boxeds and sumbit buttonsa nd also havethem work in a way so that they are
+deleted when the names are given*/
+
+/* also welcome message in ifro section and then draw indications
